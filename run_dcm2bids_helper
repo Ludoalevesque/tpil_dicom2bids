@@ -1,0 +1,6 @@
+source_dir="/mnt/d/NeuroImaging/DICOMS/PT_PL002_V1/DICOM"
+output_dir="/home/ludo/dcm2bids-proj"
+
+dcm2bids_helper -d "$source_dir" -o "$output_dir"
+
+#cd $output_dir

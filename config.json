@@ -1,0 +1,80 @@
+{
+  "descriptions": [
+    {
+      "dataType": "anat",
+      "modalityLabel": "T1w",
+      "criteria": {
+        "SeriesDescription": "AX_3D T1",
+	"ImageType": ["ORIGINAL", "PRIMARY", "M", "FFE", "M", "FFE"]
+      }
+    },
+    {
+      "dataType": "dwi",
+      "modalityLabel": "dwi",
+      "customLabels": "dir-AP",
+      "criteria": {
+        "SeriesDescription": "DWI"
+      },
+      "sidecarChanges": {
+        "PhaseEncodingDirection": "j"
+      }
+    },
+    {
+      "dataType": "fmap",
+      "modalityLabel": "epi",
+      "customLabels": "dir-PA",
+      "criteria": {
+        "SeriesDescription": "revDWI"
+      },
+      "sidecarChanges": {
+        "PhaseEncodingDirection": "j-",
+        
+      },
+      "IntendedFor": 1
+    },
+    {
+      "dataType": "func",
+      "modalityLabel": "bold",
+      "customLabels": "task-rest",
+      "criteria": {
+	"SeriesDescription": "fMRI MB4 3mm"
+      },
+      "sidecarChanges": {
+        "PhaseEncodingDirection": "j",
+        "B0FieldSource": "pepolar_fmap0"
+      },
+      "TaskName": "rest"
+    },
+    {
+      "dataType": "fmap",
+      "modalityLabel": "epi",
+      "customLabels": "dir-AP",
+      "criteria": {
+        "SeriesDescription": "rev fMRI MB4 3mm"
+      },
+      "IntendedFor": 3,
+      "sidecarChanges": {
+        "PhaseEncodingDirection": "j-",
+        "B0FieldIdentifier": "pepolar_fmap0"
+      }
+    }//,
+    // {
+    //   "dataType": "swi",
+    //   "modalityLabel": "swi",
+    //   "customLabels": "part-mag",
+    //   "criteria": {
+    //     "SeriesDescription": "SWIp",
+    //     "ImageType": ["ORIGINAL", "PRIMARY", "SW", "M", "FFE", "SW", "M", "FFE"]
+    //   }
+    // },
+    // {
+    //   "dataType": "swi",
+    //   "modalityLabel": "swi",
+    //   "customLabels": "part-phase",
+    //   "criteria": {
+    //     "SeriesDescription": "SWIp",
+    //     "ImageType": ["ORIGINAL", "PRIMARY", "SW", "P", "FFE", "SW", "P", "FFE", "PHASE"]      
+    //   }
+    // }
+  ]
+}
