@@ -57,24 +57,26 @@
         "PhaseEncodingDirection": "j-",
         "B0FieldIdentifier": "pepolar_fmap0"
       }
-    }//,
-    // {
-    //   "dataType": "swi",
-    //   "modalityLabel": "swi",
-    //   "customLabels": "part-mag",
-    //   "criteria": {
-    //     "SeriesDescription": "SWIp",
-    //     "ImageType": ["ORIGINAL", "PRIMARY", "SW", "M", "FFE", "SW", "M", "FFE"]
-    //   }
-    // },
-    // {
-    //   "dataType": "swi",
-    //   "modalityLabel": "swi",
-    //   "customLabels": "part-phase",
-    //   "criteria": {
-    //     "SeriesDescription": "SWIp",
-    //     "ImageType": ["ORIGINAL", "PRIMARY", "SW", "P", "FFE", "SW", "P", "FFE", "PHASE"]      
-    //   }
-    // }
+    },
+
+    {
+       "dataType": "swi",
+       "modalityLabel": "swi",
+       "customLabels": "part-mag",
+       "criteria": {
+         "SeriesDescription": "SWIp",
+         "ImageType": ["ORIGINAL", "PRIMARY", "SW", "M", "FFE", "SW", "M", "FFE"]
+       }
+     },
+    
+     {
+       "dataType": "swi",
+       "modalityLabel": "swi",
+       "customLabels": "part-phase",
+       "criteria": {
+         "SeriesDescription": "SWIp",
+         "ImageType": ["ORIGINAL", "PRIMARY", "SW", "P", "FFE", "SW", "P", "FFE", "PHASE"]      
+       }
+     }
   ]
 }
